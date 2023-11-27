@@ -46,16 +46,47 @@
 }
 
 .button:hover {
-  background-color: #fff;
-  color: #ff5252;
-  border: 2px solid #ff5252;
-  box-shadow: 5px 5px 0px #ff5252;
+    background-color: #fff;
+    color: #ff5252;
+    border: 2px solid #ff5252;
+    box-shadow: 5px 5px 0px #ff5252;
 }
 
 .button:active {
-  background-color: #fcf414;
-  box-shadow: none;
-  transform: translateY(4px);
+    background-color: #fcf414;
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.button-ab {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: azure;
+    display: inline-block;
+    padding: 20px 35px;
+    font-size: 35px;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5252;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+}
+
+.button-ab:hover {
+    background-color: #fff;
+    color: #ff5252;
+    border: 2px solid #ff5252;
+    box-shadow: 5px 5px 0px #ff5252;
+}
+
+.button-ab:active {
+    background-color: #fcf414;
+    box-shadow: none;
+    transform: translateY(4px);
 }
 
 </style>
@@ -69,17 +100,7 @@
     <div class="btn">
         <a class="button" href="../game">PLAY</a>
         <a class="button" href="/">HELP</a>
+        <a class="button-ab" href="/">ABOUT</a>
 
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-<!-- <h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="../game">kit.svelte.dev</a> to read the documentation</p> -->
