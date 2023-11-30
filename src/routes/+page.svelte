@@ -99,8 +99,8 @@
 
     <div class="btn">
         <a class="button" href="../game">PLAY</a>
-        <a class="button" href="/">HELP</a>
-        <a class="button-ab" href="/">ABOUT</a>
+        <a class="button" href="../help">HELP</a>
+        <a class="button-ab" href="../about">ABOUT</a>
 
     </div>
-</div>
+</div>s
