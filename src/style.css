@@ -1,0 +1,117 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+        .btn {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        padding: 20px;
+    }
+
+    .button {
+        font-family: 'Lexend Deca', sans-serif;
+        background-color: azure;
+        display: flex;
+        padding: 20px 50px;
+        font-size: 35px;
+        margin-right: auto;
+        margin-left: auto;
+        font-weight: bold;
+        color: #fff;
+        background-color: #ff5252;
+        border: 2px solid #000;
+        border-radius: 10px;
+        box-shadow: 5px 5px 0px #000;
+        transition: all 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #fff;
+        color: #ff5252;
+        border: 2px solid #ff5252;
+        box-shadow: 5px 5px 0px #ff5252;
+    }
+
+    .button:active {
+        background-color: #fcf414;
+        box-shadow: none;
+        transform: translateY(4px);
+    }
+    
+    .tictac {
+        width: 500px;
+        height: 500px;
+        display: grid;
+        grid: 200px / auto auto auto;
+        margin: auto;
+        margin-top: -530px;
+    }
+
+    .tictac button {
+        width: 200px;
+        height: 200px; 
+        margin: 0;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: #ff5252;
+        border: 2px solid #000;
+        border-radius: 10px;
+        box-shadow: 5px 5px 0px #000;
+        transition: all 0.3s ease;
+        
+    }
+
+    .tictac button:active {
+
+        background-color: #fcf414;
+        box-shadow: none;
+        transform: translateY(4px);
+        
+    }
+
+    .btn-back {
+        padding: 20px;
+    }
+
+    .text-game {
+        font-family: 'Lexend Deca', sans-serif;
+        color: #fff;
+        text-align: center;
+        
+    }
+
+    .text-game-result {
+        margin: 0;
+        font-family: 'Nabla', sans-serif;
+        font-weight: bold;
+        font-size: 100px;
+        color: #b60707;
+        text-align: center;
+    }
+
+    .show-turn{
+        font-family: 'Lexend Deca', sans-serif;
+        color: #fff;
+        margin: 0px;
+        font-size: 50px;
+        padding-left: 115px;
+        padding-top: 220px;
+    }
+
+    .show-turn-font{
+        font-family: 'Nabla', sans-serif;
+        color: #fff;
+        margin-top: -30px;
+        font-size: 120px;
+        padding-left: 210px;
+        
+        
+    }

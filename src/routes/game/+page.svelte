@@ -1,4 +1,6 @@
 <script>
+    import style from "../../style.css"
+    
     let buttons = new Array(9).fill(null);
     let result = null;
     let turn = 'X';
@@ -12,8 +14,6 @@
     [2,5,8],
     [0,4,8],
     [2,4,6]
-
-
 
     ];
 
@@ -49,105 +49,6 @@
 
 </script>
     
-<style>
-        @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
-
-        .btn {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        align-content: stretch;
-        padding: 20px;
-    }
-
-    .button {
-        font-family: 'Lexend Deca', sans-serif;
-        background-color: azure;
-        display: flex;
-        padding: 20px 50px;
-        font-size: 35px;
-        margin-right: auto;
-        margin-left: auto;
-        font-weight: bold;
-        color: #fff;
-        background-color: #ff5252;
-        border: 2px solid #000;
-        border-radius: 10px;
-        box-shadow: 5px 5px 0px #000;
-        transition: all 0.3s ease;
-    }
-
-    .button:hover {
-        background-color: #fff;
-        color: #ff5252;
-        border: 2px solid #ff5252;
-        box-shadow: 5px 5px 0px #ff5252;
-    }
-
-    .button:active {
-        background-color: #fcf414;
-        box-shadow: none;
-        transform: translateY(4px);
-    }
-    
-    .tictac {
-        width: 500px;
-        height: 500px;
-        display: grid;
-        grid: 200px / auto auto auto;
-        margin: auto;
-        margin-top: 100px;
-    }
-
-    .tictac button {
-        width: 200px;
-        height: 200px; 
-        margin: 0;
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 50px;
-        font-weight: bold;
-        text-align: center;
-        text-decoration: none;
-        color: #fff;
-        background-color: #ff5252;
-        border: 2px solid #000;
-        border-radius: 10px;
-        box-shadow: 5px 5px 0px #000;
-        transition: all 0.3s ease;
-    }
-
-    .tictac button:active {
-
-        background-color: #fcf414;
-        box-shadow: none;
-        transform: translateY(4px);
-        
-    }
-
-    .btn-back {
-        padding: 20px;
-    }
-
-    .text-game {
-        font-family: 'Lexend Deca', sans-serif;
-        color: #fff;
-        text-align: center;
-        
-    }
-
-    .text-game-result {
-        margin: 0;
-        font-family: 'Nabla', sans-serif;
-        font-weight: bold;
-        font-size: 100px;
-        color: #b60707;
-        text-align: center;
-    }
-
-</style>
 
 <div class="container-back">
     <div class="btn-back">
@@ -160,13 +61,18 @@
 
 
 {#if !result}
+    
+    <div class="show-turn-case" >
+        <p class="show-turn">Your Turn:</p>
+        <p id="buttons" class="show-turn-font">{turn}</p>
+    </div>
+
     <div class="tictac">
         {#each buttons as button,i}
         <button on:click={( )=>{setValue(i)}}>
             {button?button:""}
         </button>
         {/each}
-
     </div>
 
     {:else}
